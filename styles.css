@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 2em;
+}
+
+.container {
+  display: grid;
+  box-shadow: 0px 5px 10px 0px rgba(96, 125, 139, 0.5803921569);
+}
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 45em;
+  }
+}
+
+.content {
+  padding: 3em;
+}
+
+.top {
+  background-color: white;
+}
+@media (min-width: 1024px) {
+  .top {
+    grid-column: span 2;
+  }
+}
+.top h1 {
+  color: var(--Cyan);
+  margin-bottom: 1em;
+}
+.top h2 {
+  color: var(--Bright-Yellow);
+  margin-bottom: 1em;
+}
+.top p {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.subscription {
+  background-color: var(--Cyan);
+  color: white;
+}
+.subscription h2 {
+  margin-bottom: 1em;
+}
+.subscription .price {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  margin-bottom: 1em;
+}
+.subscription .price span {
+  font-size: 45px;
+  font-weight: bold;
+}
+.subscription .lead {
+  font-weight: 400;
+}
+.subscription button {
+  color: white;
+  margin-top: 2em;
+  background-color: var(--Bright-Yellow);
+  border-style: none;
+  width: 90%;
+  padding: 1em 0;
+  box-shadow: 0px 5px 10px 0px rgba(96, 125, 139, 0.5803921569);
+  border-radius: 5px;
+}
+
+.about {
+  background-color: hsla(179deg, 62%, 43%, 0.5);
+  color: white;
+}
+.about p {
+  margin-top: 1em;
+  line-height: 1.7;
+  padding-right: 20%;
+}/*# sourceMappingURL=styles.css.map */
